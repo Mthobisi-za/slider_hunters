@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Required Core Stylesheet -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body style="padding: 0;margin: 0;width: 100%;">
+    <section class="splide" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <img src="https://mthobisi-za.github.io/suummer_site/assets/banner.png" alt="">
+                </li>
+                <li class="splide__slide">
+                    <img src="https://mthobisi-za.github.io/suummer_site/assets/banner.png" alt="">
+                </li>
+
+            </ul>
+        </div>
+        <div class="splide__progress">
+            <div class="splide__progress__bar">
+            </div>
+        </div>
+    </section>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var splide = new Splide('.splide', {
+            type: 'loop',
+            autoplay: true,
+            speed: 1500
+        });
+        splide.mount();
+    });
+</script>
+
+</html>

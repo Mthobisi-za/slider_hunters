@@ -1,0 +1,16 @@
+.glide__slides {
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    width: 100%;
+}
+
+.splide__progress__bar {
+    height: 3px;
+    background: #114020;
+}
